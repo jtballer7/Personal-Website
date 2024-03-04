@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+}
+.pageone {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9290C3;
+    margin: 0;
+    padding: 0;
+}
+/* Nav Bar */
+.Nav {
+    background-color: #070F2B;
+    color: #9290C3;
+    font-family: "Poppins", "sans-serif";
+    width: 100%;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+h1 {
+    display: inline;
+    text-align: center;
+}
+h1:hover {
+    color: #FFFB73;
+}
+.Navbutton {
+    border: none;
+    background-color: #9290C3;
+    width: 100px;
+    border-radius: 12px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 700;
+    padding: 10px;
+}
+.Navbutton:hover {
+    background-color: #FFFB73;
+    color:#9290C3;
+    box-shadow: 0 8px 16px 0 #FFFB73;
+}
+@media (max-width: 800px) {
+    .Nav {
+        width: 120px;
+        height: 100vh;;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        flex-direction: row;
+    }
+}
+/*Hero section */
+
+.hero {
+    width: 50%;
+    height: 50vh;
+    background-color: #070F2B;
+    color:#FFFB73;
+    border-radius: 120px;
+    font-family: "Poppins", "sans-serif";
+}
+#heroheading {
+    text-align: center;
+    font-size: 3rem;
+}
+#heroheading:hover {
+    text-shadow: 0px 5px 15px #FFFB73;
+}
+#heroparagraph {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 100px;
+    color: #9290C3;
+    font-weight: 600;
+}
+.pagetwo, .pagethree, .pagefour {
+    background-color: #9290C3;
+    height: 100vh;
+}
+@media (max-width: 1500px) {
+    #heroparagraph {
+        font-size: 1rem;
+        padding: 0px 60px;
+    }
+    #heroheading {
+        font-size: 2rem;
+    }
+    .hero {
+        height: 25vh;
+        width: 75%
+    }
+}
+@media (max-width: 800px) {
+    #heroparagraph {
+        font-size: .75rem;
+        padding: 0px 60px;
+    }
+    #heroheading {
+        font-size: 1.3rem;
+    }
+    .hero {
+        height: 50vh;
+        width: 50%;
+        padding-top: 50px;
+    }
+}
+/* PAGE TWO */
+.pagetwo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron {
+    background-color: #070F2B;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resumebutton {
+    border: none;
+    background-color: #9290C3;
+    text-align: center;
+    width: 50%;
+    border-radius: 12px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 700;
+    padding: 100px;
+    font-size: 3rem;
+    color: #FFFB73;
+    text-decoration: none;
+    text-shadow: 0px 10px 15px #070F2B;
+}
+.resumebutton:hover {
+    background-color: #FFFB73;
+    color:#9290C3;
+    box-shadow: 0 8px 16px 0 #FFFB73;
+}
+/* PAGE THREE */
+.pagethree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 10%;
+    padding: 100px;
+}
+.box {
+    background-color: #FFFB73;
+    border: solid 30px #070F2B;
+    border-radius: 12px;
+    box-shadow: 5px 15px 20px 0 #070F2B;
+}
+.four, .five, .six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #070F2B;
+    background-color: #ffffff;
+}
+.first, .second, .third {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projectlink {
+    color:#070F2B;
+    text-decoration: none;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 900;
+    font-size: 2rem;
+}
+@media (max-width: 1500px) {
+    .pagethree {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr;
+    }  
+}
+/* Page FOUR */
+.pagefour {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+}
+.aboutme {
+    background-color: #070F2B;
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profilecircle {
+    background-color: #9290C3;
+    height: 60%;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 5%;
+    border: solid 10px #FFFB73;
+}
+.profiletext {
+    padding: 5%;
+    width: 50%;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 600;
+    font-size: 1rem;
+    color: #9290C3;
+}
+.julianimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.footer {
+    background-color: #070F2B;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+.Copyright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", "sans-serif";
+    color: #9290C3;
+    
+}
+.contact {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
